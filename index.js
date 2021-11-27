@@ -35,6 +35,8 @@ app.post('/details', (req, res) => {
     )
 });
 
-app.listen(3005, () => {
+const port = Process.env.PORT || 3000 ;
+
+app.listen(port, () => {
     console.log("Server running on port 3005")
 })
